@@ -17,7 +17,7 @@ var messages = {
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
+    return cp.spawn('jekyll.bat', ['build'], {stdio: 'inherit'})
         .on('close', done);
 });
 
@@ -54,7 +54,8 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
  */
 gulp.task('sass', function () {
     return gulp.src('assets/css/main.scss')
-        .pipe(sass({
+	.pipe(sass({ style: 'expanded' })).on('error', errorHandler)       
+	   .pipe(sass({
             includePaths: ['css'],
             onError: browserSync.notify
         }))
@@ -87,6 +88,11 @@ gulp.task('watch', function () {
     gulp.watch('_jadefiles/*.jade', ['jade']);
 });
 
+// Handle the error
+function errorHandler (error) {
+  console.log(error.toString());
+  this.emit('end');
+}
 
 
 

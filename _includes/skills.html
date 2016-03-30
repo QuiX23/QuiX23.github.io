@@ -6,10 +6,10 @@
 
             <li>
 
-                <span class="caption-skill">HTML</span>
+                <span class="caption-skill">Game Development</span>
                 <div class="progress">
-                    <div class="progress-bar" style="width: 100%">
-                        <span>100% </span>
+                    <div class="progress-bar" style="width: 80%">
+                        <span>80% </span>
                     </div>
                 </div>
 
@@ -17,12 +17,12 @@
 
             <li>
 
-                <span class="caption-skill">Bootstrap</span>
+                <span class="caption-skill">C++/C#</span>
                                 
                                 
                 <div class="progress">
-                    <div class="progress-bar" style="width: 90%">
-                        <span>90% </span>
+                    <div class="progress-bar" style="width: 75%">
+                        <span>75% </span>
                     </div>
                 </div>
 
@@ -30,7 +30,59 @@
 
             <li>
 
-                <span class="caption-skill">JavaScript</span>
+                <span class="caption-skill">Unity3D</span>
+                                
+                                
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%">
+                        <span>80% </span>
+                    </div>
+                </div>
+
+            </li>
+
+            <li>
+
+                <span class="caption-skill">OpenGL</span>
+                                
+                                
+                <div class="progress">
+                    <div class="progress-bar" style="width: 65%">
+                        <span>65% </span>
+                    </div>
+                </div>
+
+            </li>
+
+            <li>
+
+                <span class="caption-skill">HLSL</span>
+                                
+                                
+                <div class="progress">
+                    <div class="progress-bar" style="width: 60%">
+                        <span>60% </span>
+                    </div>
+                </div>
+
+            </li>
+			
+			<li>
+
+                <span class="caption-skill">Visual Studio</span>
+                                
+                                
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%">
+                        <span>75% </span>
+                    </div>
+                </div>
+
+            </li>
+			
+			<li>
+
+                <span class="caption-skill">Git</span>
                                 
                                 
                 <div class="progress">
@@ -40,32 +92,36 @@
                 </div>
 
             </li>
+			
+			
+<script>
+function isScrolledIntoView(elem)
+{
+    var $elem = $(elem);
+    var $window = $(window);
 
-            <li>
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
 
-                <span class="caption-skill">AngularJS</span>
-                                
-                                
-                <div class="progress">
-                    <div class="progress-bar" style="width: 70%">
-                        <span>70% </span>
-                    </div>
-                </div>
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
 
-            </li>
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+if (isScrolledIntoView(document.getElementsByClassName("progress-bar")))
+{
+	$(".progress-bar").animate({
+        
+        width: '150px'
+    });
+}
 
-            <li>
+$(".progress-bar").animate({
+        
+        width: '150px'
+    });
 
-                <span class="caption-skill">Java/Java EE</span>
-                                
-                                
-                <div class="progress">
-                    <div class="progress-bar" style="width: 90%">
-                        <span>90% </span>
-                    </div>
-                </div>
-
-            </li>
+</script>
 
         </ul>
     </div>

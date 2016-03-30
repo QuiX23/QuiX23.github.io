@@ -1,0 +1,12 @@
+---
+layout: project
+title:  "Rasa 2D"
+date:   2013-01-01 
+categories: project
+featured: true
+featured_image: "../../assets/img/Projects/Rasa2.jpg"
+tags: SFML,C++
+---
+
+
+A 2D top-down action game inspired by the game “Hot-Line Miami”(C++/SFML). It was developed in a two person team.

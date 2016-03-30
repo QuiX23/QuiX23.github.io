@@ -6,18 +6,21 @@ layout: default
 
 
 
-<h2 id="Blog"> Blog Posts</h2>
+<h2 id="Blog"> Projects</h2>
 <hr class="bar-blog"> </hr>
-  {% for post in site.categories['blog'] %}
-    <div class="post-header">
-      <a href="{{post.url}}"><h1 class="post-title">{{ post.title }}</h1></a>
-    </div>
-    <div class="post-header">
-      <p class="post-meta">{{ post.date | date: "%B %-d, %Y — %H:%M" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
-    </div>
+<div class="project-container">
+  {% for post in site.categories['project'] %}
+	<div class="project-post "onclick="location.href='{{post.url}}'">
+     <p class="project-title">{{ post.title }}</p>
+     <p class="project-meta">{{post.tags}}</p>
+     <img src="{{post.featured_image}}" alt="Project img" style="display:block; width:304px;height:228px; margin-left:auto; margin-right:auto;">
+	</div >
 
   {% endfor %}
+  </div>
+  <div class="project-container">
   <hr class="bar-blog"> </hr>
-<div class="temp-posts">
+
 
 </div>
+{% include footer_small.html %}

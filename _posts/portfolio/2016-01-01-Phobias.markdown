@@ -1,0 +1,13 @@
+---
+layout: project
+title:  "Phobias"
+date:   2015-12-12
+categories: project
+featured: true
+featured_image: "../../assets/img/Projects/Phobias.jpg"
+tags: Unity3D, C#, CAVE
+---
+
+Engineering Thesis.
+System to support implosive phobias treating with use of virtual reality cave
+using Unity3d, Cave’s API.

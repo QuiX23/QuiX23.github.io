@@ -594,10 +594,11 @@ h2 {
   h2 {
     padding: 50px 0 50px; } }
 
-h2, header nav a, header .kicker, footer .lockup a, #h_small #nav_small a, #h_small .kicker {
+h2, header nav a, header .kicker, footer .lockup a, #h_small #nav_small a, #h_small .kicker, .pers-nav nav a {
   font-size: 14px;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase; 
+  }
 
 @media only screen and (min-width: 1070px) {
   .logo {
@@ -647,7 +648,7 @@ header {
 
 @media only screen and (min-width: 220px) {
   header {
-    height: 300px; } }
+    height: 400px; } }
 
 @media only screen and (min-width: 650px) {
   header {
@@ -662,9 +663,11 @@ header nav {
   margin: 30px 30px 30px; }
 
 header nav a {
+	border-style: solid;
+	border-color: black;
+	background-color: black;
   margin-left: 20px;
-  color: rgba(0, 0, 0, 0.5); }
-
+  color: white; }
 @media only screen and (min-width: 220px) {
   header nav a {
     display: none; } }
@@ -674,11 +677,12 @@ header nav a {
     display: inline-block; } }
 
 header nav a:hover {
-  color: black; }
+  color: black;
+background-color: white;  }
 
 header h1 {
   text-align: center;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(1, 1, 1, 1);
   text-transform: uppercase;
   letter-spacing: 0.05cm;
   margin-bottom: 20px;
@@ -705,7 +709,7 @@ header h1 {
 header h1 span {
   display: inline-block;
   padding: 0.2em 0.5em;
-  border: rgba(0, 0, 0, 0.5) solid 10px; }
+  border: rgba(1, 1, 1, 1) solid 10px; }
 
 @media only screen and (min-width: 220px) {
   header h1 span {
@@ -722,7 +726,7 @@ header h1 span {
 header .kicker {
   text-align: center;
   line-height: 1;
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 1); }
 
 footer {
   background: url(../img/galway3.jpg) center center;
@@ -740,15 +744,19 @@ footer .lockup .content-wrap .copyright {
   margin: 0;
   text-transform: uppercase;
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.4); }
+  color: white; }
 
 footer .lockup a {
-  color: rgba(0, 0, 0, 0.6);
+	border-style: solid;
+	border-color: black;
+  color: white;
+  background-color: black;
   display: inline-block;
   margin-right: 30px; }
 
 footer .lockup a:hover {
-  color: black; }
+  color: black;
+background-color: white;  }
 
 @media only screen and (min-width: 220px) {
   .about-lock {
@@ -1467,7 +1475,7 @@ form label span {
 #h_small #nav_small a {
   display: inline-block;
   margin-left: 10px;
-  color: rgba(0, 0, 0, 0.5); }
+  color: white; }
 
 #h_small #nav_small a:hover {
   color: black; }
@@ -1629,4 +1637,27 @@ form label span {
     color: #303e49;
      font-weight: bold; 
       }
+	  /* New nav */
+	  
+.pers-nav nav {
+  float: right;
+  margin: 30px 30px 30px; }
+
+.pers-nav nav a {
+	background-color: #dddddd;
+  margin-left: 20px;
+  display: box;
+  color: rgba(0, 0, 0, 1); }
+
+@media only screen and (min-width: 220px) {
+  .pers-nav nav a {
+    display: box; } }
+
+@media only screen and (min-width: 650px) {
+  .pers-nav nav a {
+    display: inline-block; 
+	display: box;	}
+
+.pers-nav nav a:hover {
+  color: black; }
 

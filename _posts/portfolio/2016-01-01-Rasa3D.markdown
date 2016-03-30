@@ -1,0 +1,16 @@
+---
+layout: project
+title:  "RaSa 3D Engine"
+date:   2016-01-01 
+categories: project
+featured: true
+featured_image: "../../assets/img/Projects/RasaEngineDemo.png"
+tags: C++, OpenGL
+---
+
+[GitHub]:      https://github.com/QuiX23/RasaEngine
+
+[GitHub][GitHub]/ In progress
+
+Academic and personal project, aiming at creating 3D real-time rendering engine. 
+The goal is to present the ability of fracture simulate, by dividing mesh into pices, in real time.

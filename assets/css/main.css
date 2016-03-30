@@ -1,4 +1,4 @@
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+﻿/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -442,13 +442,18 @@ th {
   content: "\e000"; }
 
 .flaticon-cogwheel28:before {
-  content: "\e001"; }
+  content: "\e001"; 
+  /*max-width: 10px;
+    content:  url(../img/1-cmd.JPG);*/ }
 
 .flaticon-command9:before {
   content: "\e002"; }
 
 .flaticon-computer1:before {
-  content: "\e003"; }
+  content:  url(../img/1-cmd.JPG);
+   max-width: 10px;
+    max-height:10px;
+   /* content: "\e003";*/ }
 
 .flaticon-computer3:before {
   content: "\e004"; }
@@ -761,12 +766,19 @@ footer .lockup a:hover {
     margin: auto;
     border-radius: 60%;
     background: url(../img/face.JPG) no-repeat; }
-  .about-lock .face1-img {
+  .about-lock .face1-img  {
     height: 180px;
     width: 180px;
-    border-radius: 50%;
-    background: url(../img/android.JPG);
-    margin: auto; }
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    border-radius: 60%;
+    background: url(../img/facebit.JPG) no-repeat; }
   .about-lock .flip-container {
     -webkit-perspective: 1000;
             perspective: 1000;
@@ -778,7 +790,10 @@ footer .lockup a:hover {
     -webkit-order: 3;
     -moz-order: 3;
     order: 3;
-    -ms-flex-order: 3; }
+    -ms-flex-order: 3;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .about-lock .flip-container:hover .flipper, .about-lock .flip-container.hover .flipper {
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg); }
@@ -872,7 +887,9 @@ footer .lockup a:hover {
     -moz-order: 5;
     order: 5;
     -ms-flex-order: 5;
-    display: block; }
+    display: block; 
+   /* background: url(../img/binaryIcon.JPG) no-repeat; }*/
+  }
   .about-lock .glyph-icon:hover {
     -webkit-transform: scale(1.2);
     transform: scale(1.2); }
@@ -900,6 +917,11 @@ footer .lockup a:hover {
 .section-contact {
   background: #e5eaee;
   text-align: center; }
+  
+  .section-skills {
+  background: #e5eaee;
+  text-align: left; 
+  }
 
 .social-links {
   max-width: 700px;
@@ -1471,7 +1493,7 @@ form label span {
 .thumb-container {
   max-width: 960px;
   margin: 0px auto;
-  padding-bottom: 100px; }
+  padding-bottom: 50px; }
 
 .thumb-container::after {
   clear: both;
@@ -1509,3 +1531,102 @@ form label span {
 
 .temp-posts {
   margin-bottom: 350px; }
+  
+  /*Skills*/
+
+.grid-block {
+    border: 1px solid #dddddd;
+    padding: 15px 25px;
+    margin-right: 150px ;
+    margin-left: 150px;
+}
+
+.list-skills li  {
+    margin-bottom:50px;
+}
+
+.list-skills li .progress {
+    height: 10px;
+    box-shadow: none;
+    overflow: inherit;
+}
+
+.list-skills li .progress .progress-bar {
+    border-radius: 5px;
+    text-align: right;
+    position: relative;
+    background: #63A4B5;
+    box-shadow: none;
+}
+
+.list-skills li .progress .progress-bar span {
+    position: relative;
+    bottom: -15px;
+    font-size: 10px;
+    color: white;
+    right: -13px;
+    display: inline-block;
+    background: #D84E4E;
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+
+.list-skills li .progress .progress-bar span:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: -5px;
+    border-bottom: 5px solid #D84E4E;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.list-skills li:nth-child(even) .progress-bar {
+    background: #4B6F78;
+}
+  
+  /*-----*/
+.project-container {
+    text-align: center;
+
+}
+  .project-post{
+  
+  background:#e6efff;
+
+      display: inline-block;
+      margin-right: auto;
+      margin-left: auto;
+  margin:10px;
+  cursor:pointer;
+   width: 400px;
+      height: 350px;
+
+}
+
+    .project-post:hover{
+  
+  background:rgb(230, 230, 255);
+
+
+}
+
+    .project-header {
+    }
+
+      .project-title {
+    font-size: 30px;
+    text-align: center;
+          margin-bottom: 0px;
+    color: #303e49;
+     font-weight: bold; 
+      }
+
+      .project-meta {
+    padding-left: 10px;
+      text-align: left;
+    color: #303e49;
+     font-weight: bold; 
+      }
+

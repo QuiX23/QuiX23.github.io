@@ -1,1 +1,17 @@
-<section class="alt-section"><h2 id="work">Work</h2><div class="thumb-container"><a href="" class="thumb-unit"><div class="tumb-overlay"><strong> Typo</strong><div class="zoom-icon"></div></div></a><a href="" class="thumb-unit"><div class="tumb-overlay"><strong> Typo</strong><div class="zoom-icon"></div></div></a><a href="" class="thumb-unit"><div class="tumb-overlay"><strong> Typo</strong><div class="zoom-icon"></div></div></a><a href="" class="thumb-unit"><div class="tumb-overlay"><strong> Typo</strong><div class="zoom-icon"></div></div></a><a href="" class="thumb-unit"><div class="tumb-overlay"><strong> Typo</strong><div class="zoom-icon"></div></div></a></div></section>
+<section class="alt-section">
+    <h2 id="work">Projects</h2>
+	<hr class="bar"/>
+    <div class="thumb-container project-container">
+       {% for post in site.categories['project'] limit:4%}
+	
+	<div class="project-post "onclick="location.href='{{post.url}}'">
+     <p class="project-title">{{ post.title }}</p>
+     <p class="project-meta">{{post.tags}}</p>
+     <img src="{{post.featured_image}}" alt="Mountain View" style="display:block; width:304px;height:228px; margin-left:auto; margin-right:auto;">
+	</div >
+
+{% endfor %}
+    </div>
+	<hr class="bar-blog"> </hr>
+	<h2 ><a href="/portfolio"> More >> </a></h2>
+</section>

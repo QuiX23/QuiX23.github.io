@@ -21,6 +21,7 @@ layout: default
     </div>
     <div class="post-header date">
       <p class="post-meta">{{ post.date | date: "%B %-d, %Y — %H:%M" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
+    {{ post.content | strip_html | truncatewords:75}}<br>
     </div>
 
 {% endfor %}

@@ -13,4 +13,4 @@ tags: C++, OpenGL
 [GitHub][GitHub]/ In progress
 
 Academic and personal project, aiming at creating 3D real-time rendering engine. 
-The goal is to present the ability of fracture simulate, by dividing mesh into pices, in real time.
+The goal is to present the ability of fracture simulation, by dividing mesh into pices, in real time.

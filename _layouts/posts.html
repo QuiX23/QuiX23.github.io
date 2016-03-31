@@ -14,12 +14,15 @@ layout: default
     </div>
     <div class="post-header">
       <p class="post-meta">{{ post.date | date: "%B %-d, %Y — %H:%M" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
-       <p> {{ post.content | strip_html | truncatewords:75}}<br> </p>
+      
 
     </div>
+	<div class="post-header">
+	 <p > {{ post.content | strip_html | truncatewords:75}}  <a href="{{post.url}}"> More >> </a><br> </p>
+	</div>
+	
 
   {% endfor %}
   <hr class="bar-blog"> </hr>
-<div class="temp-posts">
-</div>
+
 {% include footer_small.html %}

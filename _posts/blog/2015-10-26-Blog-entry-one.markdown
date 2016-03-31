@@ -3,6 +3,7 @@ layout: post
 title:  "Hello world!"
 date:   2016-03-25 16:51:11
 categories: blog
+comments: true
 ---
    Even, if only I read this post, it would be nice to introduce myself. So Hi, my name is Rafał and I'm a software programmer. English isn't my native luangage so, if somebody reads it, please cut me some slack. I have a Bachelor of Engineering in comptuter sience and currently going on a road to get my Master degree. I also work as a Unity3D developer in company called Aidem-media, making games for iOS devices.<br>
   It's fairly to say, that besides being a gamer, I'm a games development nerd, devouring every subject concerning this industry. Right now I'm particularly interested in real-time 3D computer graphics rendering.

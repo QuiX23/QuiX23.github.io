@@ -7,7 +7,7 @@ featured: true
 featured_image: "../../assets/img/Projects/Phobias.jpg"
 tags: Unity3D, C#, CAVE
 ---
-
+[CAVE]:	http://www.gdansk.pl/urzad/mobile,870,34756.html
 Engineering Thesis.
-System to support implosive phobias treating with use of virtual reality cave
-using Unity3d, Cave’s API.
+System to support implosive phobias treating with a use of virtual reality.
+Stand out from other application by use of the [CAVE][CAVE] platform

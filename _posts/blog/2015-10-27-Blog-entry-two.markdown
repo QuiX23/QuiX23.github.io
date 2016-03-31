@@ -3,12 +3,13 @@ layout: post
 title:  "MVC pattern in game development"
 date:   2016-03-28 18:11:16
 categories: blog
+comments: true
 ---
 
 [podcast]:      http://www.se-radio.net/2011/05/episode-175-game-development-with-andrew-brownsword/
 [game loop pattern]: http://gameprogrammingpatterns.com/game-loop.html
 
-Recently I was listening to a [podcast][podcast] with a Andrew Brownsword, a lead developer from EA Games, one of the creators of popular racing seriers- Need for Speed. He touched many interesting subjects, introducing the listeners with practices in "big boys" league. 
+Recently I was listening to a [podcast][podcast] with Andrew Brownsword, a lead developer from EA Games, one of the creators of popular racing seriers- Need for Speed. He touched many interesting subjects, introducing the listeners with practices in "big boys" league. 
 
 As I'm also taking a shot on creating my own 3D engine, I was mostly interested with issues concerning games engine architecture. Most of the time creating my engine I spend on figuering how should each modul and object comunicate, and how to create the most elegant dependencies, to keep the expected level of abstraction. 
 

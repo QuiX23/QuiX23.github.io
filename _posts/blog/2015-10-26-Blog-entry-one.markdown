@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blog entry number one"
+title:  "Hello world!"
 date:   2016-03-25 16:51:11
 categories: blog
 ---

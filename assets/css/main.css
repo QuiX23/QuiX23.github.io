@@ -595,7 +595,7 @@ h2 {
     padding: 50px 0 50px; } }
 
 h2, header nav a, header .kicker, footer .lockup a, #h_small #nav_small a, #h_small .kicker, .pers-nav nav a {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase; 
   }

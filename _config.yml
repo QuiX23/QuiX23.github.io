@@ -2,3 +2,4 @@ name: Rafał Sadowski
 encoding: utf-8
 markdown: redcarpet
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+highlighter: pygments

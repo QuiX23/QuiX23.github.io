@@ -47,7 +47,7 @@ Z-buffor looks preety smooth. So maybe the second pass messes up the texture and
 
 It's fine. So maybe the projection matrix of the light is wrong, so the depth in the second path of all fragments result in 1.0.
 
-{% highlight cpp %}
+{% highlight ruby %}
 	if(projCoords.z >= 1.0)
         shadow = 0.0;
 {% endhighlight %}
@@ -63,7 +63,7 @@ The army is half lighted as expected and the matrix looks good. Ok, so to see ho
 
 The vertex shader:
 
-{% highlight cpp %}
+{% highlight ruby %}
 void main()
 {
 	gl_Position = lightSpaceMatrix * model * vec4(position, 1.0f);
@@ -76,7 +76,7 @@ void main()
 
 Te fragment shader:
 
-{% highlight cpp %}
+{% highlight ruby %}
 void main()
 {
 	float x=gl_FragCoord.x/1200.0f;
@@ -94,7 +94,7 @@ The further the soldier is from the light, the more bright it should be. Just li
 
 Here, I've assumed that, it's probably because mapping fragments between passes is wrong, so the texturing is disorted. This assumption was my biggest mistake. It made me spend few hours debugging the maping problem, when the real cause was much simpler.
 
-{% highlight cpp %}
+{% highlight ruby %}
 for (GLuint i = 0; i < textures.size(); i++)
 {
 	const OGLTextureBuffer &tBuffer = static_cast <const OGLTextureBuffer&>(*textures[i]->texturBuffer);

@@ -52,6 +52,12 @@ It's fine. So maybe the projection matrix of the light is wrong, so the depth in
         shadow = 0.0;
 {% endhighlight %}
 
+```ruby
+def foo
+  puts 'foo'
+end
+```ruby
+
 This two lines should ensure that if the tested fragment has the z value of 1.0, it's lighted. But the "army" is still black.
 
 So to check if the orthogonal projection light matrix is properly created, I've decreased the camera far plane distance for first pass by a half. The result:

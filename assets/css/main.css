@@ -5,6 +5,7 @@
  *    user zoom.
  */
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic);
+@import url("syntax.css");
 html {
   font-family: sans-serif;
   /* 1 */

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Shadow cast, one letter bug and the 6 hours adventure."
+title:  "Shadow cast, one letter bug and the 8 hour adventure."
 date:   2016-04-25 16:11:16
 categories: blog
 comments: true
@@ -33,7 +33,7 @@ I've decided to implement the algorithm for one directional light. After coding 
 
 <img src="/assets/img/Blog/post2_blackArmy.png" height="400" width="600">
 
-Hmm, it looks like the shadow has covered almost the whole army and the first row is probably very near to the close plane of, the light orthogonal projection view. Pretty odd.
+Hmm, it looks like the shadow has covered almost the whole army and the first row is probably very near to the close plane of, the light orthographic projection view. Pretty odd.
 
 Firstly, I've checked if the z-buffer looked right in the first path. For debugging the GPU states, I've used a great tool called [NSight][NSight] by Nvidia. 
 
@@ -47,20 +47,15 @@ Z-buffor looks preety smooth. So maybe the second pass messes up the texture and
 
 It's fine. So maybe the projection matrix of the light is wrong, so the depth in the second path of all fragments result in 1.0.
 
-{% highlight ruby %}
+{% highlight cpp %}
 	if(projCoords.z >= 1.0)
         shadow = 0.0;
 {% endhighlight %}
 
-```ruby
-def foo
-  puts 'foo'
-end
-```ruby
 
 This two lines should ensure that if the tested fragment has the z value of 1.0, it's lighted. But the "army" is still black.
 
-So to check if the orthogonal projection light matrix is properly created, I've decreased the camera far plane distance for first pass by a half. The result:
+So to check if the orthographic projection light matrix is properly created, I've decreased the camera far plane distance for first pass by a half. The result:
 
 
 <img src="/assets/img/Blog/halfortho.png"  height="400" width="600">
@@ -69,7 +64,7 @@ The army is half lighted as expected and the matrix looks good. Ok, so to see ho
 
 The vertex shader:
 
-{% highlight ruby %}
+{% highlight cpp %}
 void main()
 {
 	gl_Position = lightSpaceMatrix * model * vec4(position, 1.0f);
@@ -82,7 +77,7 @@ void main()
 
 Te fragment shader:
 
-{% highlight ruby %}
+{% highlight cpp %}
 void main()
 {
 	float x=gl_FragCoord.x/1200.0f;
@@ -100,7 +95,7 @@ The further the soldier is from the light, the more bright it should be. Just li
 
 Here, I've assumed that, it's probably because mapping fragments between passes is wrong, so the texturing is disorted. This assumption was my biggest mistake. It made me spend few hours debugging the maping problem, when the real cause was much simpler.
 
-{% highlight ruby %}
+{% highlight cpp %}
 for (GLuint i = 0; i < textures.size(); i++)
 {
 	const OGLTextureBuffer &tBuffer = static_cast <const OGLTextureBuffer&>(*textures[i]->texturBuffer);

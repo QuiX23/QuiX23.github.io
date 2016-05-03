@@ -10,3 +10,5 @@ tags: SFML,C++
 
 
 A 2D top-down action game inspired by the game “Hot-Line Miami”(C++/SFML). It was developed in a two person team.
+
+<img src="/assets/img/Projects/Rasa1.png" height="400" width="400">

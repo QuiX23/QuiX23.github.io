@@ -12,7 +12,7 @@ Engineering Thesis.
 System to support implosive phobias treating with a use of virtual reality.
 Stand out from other application by use of the [CAVE][CAVE] platform.
 
-<img src="/assets/img/Projects/Phobias1.jpg" style=" max-width:800px;height:600px; display:block; margin-left:auto; margin-right:auto;>
-<img src="/assets/img/Projects/Phobias2.jpg" style=" max-width:800px;height:600px; display:block; margin-left:auto; margin-right:auto;>
-<img src="/assets/img/Projects/Phobias3.jpg" style=" max-width:800px;height:600px; display:block; margin-left:auto; margin-right:auto;>
-<img src="/assets/img/Projects/Phobias4.jpg" style=" max-width:800px;height:600px; display:block; margin-left:auto; margin-right:auto;>
+<img src="/assets/img/Projects/Phobias1.jpg" style=" max-width:800px;height:600px; display:block; margin-left:auto; margin-right:auto;">
+<img src="/assets/img/Projects/Phobias2.jpg" style=" max-width:800px;height:600px; display:block; margin-left:auto; margin-right:auto;">
+<img src="/assets/img/Projects/Phobias3.jpg" style=" max-width:800px;height:600px; display:block; margin-left:auto; margin-right:auto;">
+<img src="/assets/img/Projects/Phobias4.jpg" style=" max-width:800px;height:600px; display:block; margin-left:auto; margin-right:auto;">

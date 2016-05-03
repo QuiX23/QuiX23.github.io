@@ -13,4 +13,4 @@ tags: Java,Swing
 
 Simple 2D top-down survival game. Created to learn Java.
 
-<img src="/assets/img/Projects/zombiesurvival2.png" height="400" width="400">
+<img src="/assets/img/Projects/zombiesurvival2.jpeg" height="600" width="600">

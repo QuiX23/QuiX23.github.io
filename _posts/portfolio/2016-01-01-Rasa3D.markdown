@@ -10,7 +10,7 @@ tags: C++, OpenGL
 
 [GitHub]:      https://github.com/QuiX23/RasaEngine
 
-[GitHub]*[GitHub]*/ In progress
+[GitHub][GitHub]/ In progress
 
 Academic and personal project, aiming at creating 3D real-time rendering engine. 
 The goal is to present the ability of fracture simulation, by dividing mesh into pices, in real time.
